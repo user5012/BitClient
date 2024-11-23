@@ -4,10 +4,10 @@
 
 void settings::removeNowPath()
 {
-    std::fstream file;
-    file.open(pFile);
+    std::ofstream file(pFile);
     file << "";
     file.close();
+
 }
 
 void settings::addPath(std::string path)

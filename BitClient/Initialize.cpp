@@ -48,6 +48,7 @@ void Initialize::getPath()
 {
     std::cout << "Enter download path: ";
     std::cin >> Path;
+    std::cout << "Your new download path is: " + Path + "\n";
 }
 
 //initializes app

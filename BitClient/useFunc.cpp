@@ -2,10 +2,28 @@
 #include <Windows.h>
 #include <string>
 #include "Globals.h"
+#include <fstream>
 
 std::wstring useFunc::stringToLong(const std::string& str)
 {
 	return std::wstring(str.begin(), str.end());
+}
+
+std::string useFunc::checkPath()
+{
+	std::ifstream file(pFile);
+	std::string path;
+	if (file.is_open()) {
+		std::getline(file, path);
+		file.close();
+	}
+	return path;
+}
+
+void useFunc::printPath()
+{
+	std::string p = checkPath();
+	std::cout << "Path: " + p + "\n";
 }
 
 void useFunc::debug(const std::string message, bool bIsError, bool bIsMsgBox)
@@ -29,6 +47,11 @@ void useFunc::debug(const std::string message, bool bIsError, bool bIsMsgBox)
 			MessageBox(0, emsg.c_str(), L"BitClient", MB_OK);
 		}
 	}
+}
+
+void useFunc::cls()
+{
+	std::cout << "\033[2J\033[1;1H";
 }
 
 
