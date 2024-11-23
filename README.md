@@ -26,7 +26,7 @@ BitClient is an open-source project for a Bitcoin client, currently under active
 ### Prerequisites
 
 1. **Visual Studio 2022** (or a similar version supporting C++ projects).
-2. Basic understanding of Bitcoin and blockchain concepts.
+2. Basic understanding of Bit torrent protocol and other concepts.
 
 ### Clone the Repository
 
