@@ -26,6 +26,20 @@ void useFunc::printPath()
 	std::cout << "Path: " + p + "\n";
 }
 
+bool useFunc::checkPathExists(const char* path)
+{
+	struct stat sb;
+
+	if (stat(path, &sb) == 0) {
+		debug("path is valid", false, false);
+		return true;
+	}
+	else {
+		debug("path does not exist", true, false);
+		return false;
+	}
+}
+
 void useFunc::debug(const std::string message, bool bIsError, bool bIsMsgBox)
 {
 	if (!bIsMsgBox) {

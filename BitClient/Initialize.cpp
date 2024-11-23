@@ -46,8 +46,16 @@ void Initialize::checkIfPath()
 
 void Initialize::getPath()
 {
-    std::cout << "Enter download path: ";
-    std::cin >> Path;
+    bool bPExists = false;
+    while (!bPExists) {
+        std::cout << "Enter download path: ";
+        std::cin >> Path;
+        bPExists = usef.checkPathExists(Path.c_str());
+        if (!bPExists) {
+            usef.debug("path doesnt exists", true, false);
+            std::cout << "path doesnt extsts\nenter a correct one\n";
+        }
+    }
     std::cout << "Your new download path is: " + Path + "\n";
 }
 

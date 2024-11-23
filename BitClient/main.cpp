@@ -12,5 +12,5 @@ int main(int argc, char** argv) {
 
 //TO DO!
 /*
-Add to check if path exists
+Made others now difficult part :(
 */
