@@ -8,10 +8,9 @@ BitClient is an open-source project for a Bitcoin client, currently under active
 
 ## 🚀 Features (Planned & In Progress)
 
-- **Bitcoin Network Support:** Connect to the Bitcoin network for blockchain syncing and transactions.
-- **Wallet Functionality:** Manage wallets, addresses, and balances.
-- **Transaction Support:** Create, sign, and broadcast Bitcoin transactions.
-- **Cross-Platform Build Support:** Future plans for compatibility beyond Visual Studio.
+- **Bit torrent protocol support:** Connect to Bit torrent network, fast downloads ⚡
+- **Connect with peers:** Connect with other people using same protocol and transfer files
+- **Cross-Platform Build Support:** Planning making it for Linux base systems too 🔜
 
 ---
 
