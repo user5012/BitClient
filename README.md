@@ -1,6 +1,6 @@
 # BitClient
 
-BitClient is an open-source project for a Bitcoin client, currently under active development. Written in C++ using Visual Studio, this project aims to implement core functionality for interacting with the Bitcoin network, allowing for transactions, blockchain syncing, and more.
+BitClient is an open-source project for a Bit torrent client, currently under active development. Written in C++ using Visual Studio, this project aims to implement core functionality for interacting with the Bit torrent network, allowing downloads faster, connecting with peers, and more.
 
 ⚠️ **Note:** BitClient is a work-in-progress and not yet feature-complete. Contributions and feedback are welcome as development continues.
 
